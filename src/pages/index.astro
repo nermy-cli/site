@@ -7,13 +7,13 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Astro with Tailwind">
   <main class="flex justify-center h-screen place-items-center ">
     <div>
-      <h1 class="text-center text-7xl font-bold text-white ">
-        Astro + <span class="text-gray-300">Tailwind</span>
+      <h1 class="text-center text-7xl font-bold"><span class="nermy">Your Idea + </span>
+<span class="text-orange-500">Nermy</span>
       </h1>
-	  <p class="text-gray-300 text-center pt-4 pb-14"> A ready-to-go starter template for Astro with Tailwind to jump start your project.</p>
-      <div class="instructions max-w-3xl">
-        <span class=" text-white">
- <span class="block text-lg font-bold">Get Started <code class="block mt-2">git clone https://github.com/nermalcat69/astro-with-tailwind</code></span
+	  <p class="text-gray-700 text-center pt-4 mb-14"> A ready-to-go starter templates</p>
+      <div class="instructions bg-gray-100 max-w-3xl">
+        <span class="text-gray-800">
+ <span class="block text-lg font-bold">Get Started <code class="block mt-2">npx install nermy (coming soon)</code></span
           >
         </span>
       </div>
@@ -22,20 +22,22 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+
+  .nermy {
+background: linear-gradient(180deg, #6C6C6C 0%, #040711 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  }
   .instructions {
     border: 1px solid rgba(var(--accent-light), 25%);
-    background: linear-gradient(
-      rgba(var(--accent-dark), 66%),
-      rgba(var(--accent-dark), 33%)
-    );
     padding: 1.5rem;
     border-radius: 8px;
   }
   .instructions code {
     font-size: 0.8em;
     font-weight: bold;
-    background: rgba(var(--accent-light), 12%);
-    color: rgb(var(--accent-light));
+    color: rgb(92, 92, 92) ;
     border-radius: 4px;
     padding: 0.3em 0.4em;
   }
